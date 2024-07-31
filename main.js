@@ -15,7 +15,7 @@ console.log("Not Defined:", notDefined);
 console.log("Person Object:", person);
 console.log("Unique ID Symbol:", uniqueId);
 
-//Part 2: Arrays
+// Arrays
 
 // Creating an array of numbers
 let scores = [7, 15, 22, 35, 41];
@@ -35,3 +35,29 @@ console.log("Product of Scores:", product);
 // 6. Use forEach to print each number in the array with a message
 console.log("Scores in Array:");
 scores.forEach(score => console.log(`Score: ${score}`));
+// Functions
+
+//  Creating a function named farewell that takes a name parameter and prints a farewell message
+function farewell(name) {
+    console.log(`Goodbye, ${name}!`);
+}
+
+// Call farewell function
+farewell("sajaad");
+
+//  Creating a function named averageArray that takes an array of numbers and returns the average of all elements
+functionaverageArray(arr); {
+    let total = arr.reduce((sum, num) => sum + num, 0);
+    return total / arr.length;
+}
+
+// Test averageArray function
+console.log("Average of Array Elements:", averageArray(scores));
+
+//  Creating a function named findMin that takes an array of numbers and returns the minimum number
+function findMin(arr) {
+    return arr.reduce((min, num) => num < min ? num : min, arr[0]);
+}
+
+// Test findMin function
+console.log("Minimum Number:", findMin(scores));
